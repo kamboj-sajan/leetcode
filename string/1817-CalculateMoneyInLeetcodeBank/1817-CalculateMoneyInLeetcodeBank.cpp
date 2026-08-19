@@ -1,0 +1,15 @@
+// Last updated: 19/08/2026, 15:37:20
+class Solution {
+public:
+    int totalMoney(int n) {
+        auto [q, r]=div(n, 7);
+        return 28*q+7*q*(q-1)/2+(2*q+r+1)*r/2;
+    }
+};
+auto init = []()
+{ 
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    return 'c';
+}();
