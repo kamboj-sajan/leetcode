@@ -1,0 +1,15 @@
+// Last updated: 25/09/2026, 01:12:22
+class Solution {
+public:
+    int countOdds(int low, int high) {
+        if(low == high){
+            if(low%2 == 1)return 1;
+            else return 0;
+        }
+        if(low%2 == 0)low++;
+        if(high%2 == 0)high--;
+       int a = abs((high-low)/2); 
+       if(low%2 == 1)a++;
+       return a;
+    }
+};
