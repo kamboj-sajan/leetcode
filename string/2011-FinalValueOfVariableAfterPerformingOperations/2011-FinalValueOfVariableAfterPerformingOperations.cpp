@@ -1,0 +1,12 @@
+// Last updated: 25/09/2026, 01:07:45
+class Solution {
+public:
+    int finalValueAfterOperations(vector<string>& operations) {
+        int n = 0;
+        for(int i=0; i<operations.size(); ++i){
+            if(operations[i] == "X++" || operations[i] == "++X")n++;
+            else n--;
+        }
+        return n;
+    }
+};
